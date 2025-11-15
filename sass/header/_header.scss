@@ -1,0 +1,43 @@
+.logo {
+    font-family: $logo-style;
+    color: $logo-color;
+    font-size: 20px;
+}
+
+.header {
+    max-width: 100%;
+    background: linear-gradient(to bottom, #67d5d7, #ffffff);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__list{
+    display: flex;
+    gap: 5px;
+}
+
+.contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.contacts__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
