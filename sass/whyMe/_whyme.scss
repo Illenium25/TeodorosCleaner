@@ -1,0 +1,12 @@
+.why-me {
+    background: linear-gradient(to top, #67d5d7, #ffffff);
+}
+
+.why-me__list .why-me__item + .why-me__item {
+    margin-top: 15px;
+}
+
+.why-me__info{
+    font-size: 16px;
+    padding: 0 10px;
+}

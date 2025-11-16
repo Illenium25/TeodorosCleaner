@@ -1,0 +1,35 @@
+.cleaning__item{
+    border: 3px #000 solid;
+    border-radius: 10px;
+    padding: 0 0 20px 0;
+}
+
+.cleaning__list .cleaning__item + .cleaning__item {
+    margin-top: 15px;
+}
+
+.cleaning__pickture{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cleaning__pick {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cleaning__title{
+    font-family: $h-style;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cleaning__info {
+    font-size: 16px;
+    text-align: center;
+}
