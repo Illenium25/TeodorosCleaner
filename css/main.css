@@ -127,10 +127,31 @@ h6 {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "MuseoModerno", sans-serif;
   color: #24b1b8;
   font-weight: 600;
   font-size: 30px;
+}
+
+.logo__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  fill: #24b1b8;
 }
 
 .header {
@@ -235,9 +256,7 @@ h6 {
 }
 
 .cleaning__item {
-  border-radius: 10px;
   padding: 0 0 20px 0;
-  border-bottom: 2px solid #302828;
 }
 
 .cleaning__list .cleaning__item + .cleaning__item {
