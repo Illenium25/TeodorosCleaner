@@ -18,7 +18,7 @@
     max-width: 100%;
     padding-top: 15px;
     padding-bottom: 20px;
-    background: linear-gradient(to bottom, #67d5d7, #ffffff);
+    background: linear-gradient(to bottom, #72bfc1, #fff2ec);
 }
 
 .header-container {
@@ -50,7 +50,7 @@
 
 .contacts__icon {
     display: block;
-    fill: $logo-color;
+    fill: $button-text;
     width: 24px;
     height: 24px;
 }

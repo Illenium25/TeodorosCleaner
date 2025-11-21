@@ -26,6 +26,7 @@
   text-align: center;
   
   font-weight: 400;
+  color: $h-color;
 }
 
 .section{
@@ -40,11 +41,11 @@
     margin-left: auto;
     margin-right: auto;
 
-    background: rgba(103, 213, 215, 0.6);
+    background: #ffbc9a;
     border-radius: 5px;
 }
 
 .hero-button-link{
-    color: $text-color;
+    color: $button-text;
     font-size: 14px;
 }

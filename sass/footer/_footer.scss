@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(to top, #67d5d7, #ffffff);;
+    background: linear-gradient(to top, #72bfc1, #fff2ec);
     padding: 40px 0;
 }
 
@@ -7,6 +7,10 @@
     gap: 15px;
     display: flex;
     flex-direction: column;
+}
+
+.footer__logo-box{
+    display: flex;
 }
 
 .footer__logo{

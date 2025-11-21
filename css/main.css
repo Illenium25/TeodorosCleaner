@@ -87,7 +87,7 @@ h6 {
 }
 
 .body {
-  background: #fff;
+  background: #fff2ec;
   max-width: 100%;
 }
 
@@ -119,6 +119,7 @@ h6 {
   margin-bottom: 20px;
   text-align: center;
   font-weight: 400;
+  color: #5a4035;
 }
 
 .section {
@@ -131,12 +132,12 @@ h6 {
   padding: 10px 20px;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(103, 213, 215, 0.6);
+  background: #ffbc9a;
   border-radius: 5px;
 }
 
 .hero-button-link {
-  color: #302828;
+  color: #5a4035;
   font-size: 14px;
 }
 
@@ -149,7 +150,7 @@ h6 {
           align-items: center;
   gap: 10px;
   font-family: "MuseoModerno", sans-serif;
-  color: #24b1b8;
+  color: #204e10;
   font-weight: 600;
   font-size: 22px;
 }
@@ -166,8 +167,8 @@ h6 {
   max-width: 100%;
   padding-top: 15px;
   padding-bottom: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#67d5d7), to(#ffffff));
-  background: linear-gradient(to bottom, #67d5d7, #ffffff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#72bfc1), to(#fff2ec));
+  background: linear-gradient(to bottom, #72bfc1, #fff2ec);
 }
 
 .header-container {
@@ -214,7 +215,7 @@ h6 {
 
 .contacts__icon {
   display: block;
-  fill: #24b1b8;
+  fill: #5a4035;
   width: 24px;
   height: 24px;
 }
@@ -245,7 +246,9 @@ h6 {
 
 .hero-title {
   font-style: "Oswald", sans-serif;
+  color: #5a4035;
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .hero__info {
@@ -298,8 +301,8 @@ h6 {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left bottom, left top, from(#67d5d7), to(#ffffff));
-  background: linear-gradient(to top, #67d5d7, #ffffff);
+  background: -webkit-gradient(linear, left bottom, left top, from(#72bfc1), to(#fff2ec));
+  background: linear-gradient(to top, #72bfc1, #fff2ec);
   padding: 40px 0;
 }
 
@@ -314,11 +317,17 @@ h6 {
           flex-direction: column;
 }
 
+.footer__logo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer__logo {
   font-family: "MuseoModerno", sans-serif;
   font-size: 24px;
   font-weight: 600;
-  color: #24b1b8;
+  color: #204e10;
 }
 
 .footer__box {
@@ -328,14 +337,14 @@ h6 {
 .footer__contacts {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  color: #302828;
+  color: #393838;
 }
 
 .footer__area {
   margin-top: 20px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  color: #302828;
+  color: #393838;
 }
 
 .footer__ending {
@@ -343,7 +352,7 @@ h6 {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   text-align: center;
-  color: #302828;
+  color: #393838;
 }
 
 .gallery {
@@ -390,5 +399,5 @@ h6 {
 
 .steps__item {
   font-size: 17px;
-  color: #302828;
+  color: #393838;
 }/*# sourceMappingURL=main.css.map */
