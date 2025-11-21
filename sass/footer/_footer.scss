@@ -23,5 +23,20 @@
 .footer__contacts{
     font-family: $h-style;
     font-size: 16px;
-    color: #000;
+    color: $text-color;
+}
+
+.footer__area{
+    margin-top: 20px;
+    font-family: $h-style;
+    font-size: 14px;
+    color: $text-color;
+}
+
+.footer__ending{
+    margin-top: 30px;
+    font-family: $h-style;
+    font-size: 14px;
+    text-align: center;
+    color: $text-color;
 }

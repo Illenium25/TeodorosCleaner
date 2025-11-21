@@ -115,21 +115,39 @@ h6 {
 
 .title {
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 400;
-  font-size: 18px;
 }
 
 .section {
   padding: 20px 0;
 }
 
+.hero__button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(103, 213, 215, 0.6);
+  border-radius: 5px;
+}
+
+.hero-button-link {
+  color: #302828;
+  font-size: 14px;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   font-family: "MuseoModerno", sans-serif;
   color: #24b1b8;
   font-weight: 600;
@@ -142,16 +160,6 @@ h6 {
   display: flex;
   width: 40px;
   height: 40px;
-  margin-left: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  fill: #24b1b8;
 }
 
 .header {
@@ -216,10 +224,11 @@ h6 {
   margin-bottom: 15px;
 }
 
-.hero-img {
+.hero__img {
   max-width: 100%;
   margin-bottom: 20px;
   border-bottom: 4px solid #000;
+  border-top: 4px solid #000;
 }
 
 .hero-photo {
@@ -241,18 +250,6 @@ h6 {
 
 .hero__info {
   font-size: 18px;
-}
-
-.hero__button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: rgba(103, 213, 215, 0.6);
-  border-radius: 5px;
-}
-
-.hero-button-link {
-  color: #302828;
-  font-size: 14px;
 }
 
 .cleaning__item {
@@ -331,17 +328,27 @@ h6 {
 .footer__contacts {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  color: #000;
+  color: #302828;
+}
+
+.footer__area {
+  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  color: #302828;
+}
+
+.footer__ending {
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #302828;
 }
 
 .gallery {
   padding: 40px 20px;
   text-align: center;
-}
-
-.gallery h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
 }
 
 .gallery-container {
@@ -365,4 +372,23 @@ h6 {
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.faq-list .faq__item + .faq__item {
+  margin-top: 15px;
+}
+
+.faq__item {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.steps .steps__item + .steps__item {
+  margin-top: 10px;
+}
+
+.steps__item {
+  font-size: 17px;
+  color: #302828;
 }/*# sourceMappingURL=main.css.map */

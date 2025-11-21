@@ -1,0 +1,9 @@
+.faq-list .faq__item  + .faq__item {
+    margin-top: 15px;
+}
+
+.faq__item {
+    font-family: $h-style;
+    font-size: 16px;
+    color: #000;
+}
