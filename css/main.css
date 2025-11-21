@@ -150,7 +150,7 @@ h6 {
           align-items: center;
   gap: 10px;
   font-family: "MuseoModerno", sans-serif;
-  color: #204e10;
+  color: #c67b02;
   font-weight: 600;
   font-size: 22px;
 }
@@ -167,8 +167,6 @@ h6 {
   max-width: 100%;
   padding-top: 15px;
   padding-bottom: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#72bfc1), to(#fff2ec));
-  background: linear-gradient(to bottom, #72bfc1, #fff2ec);
 }
 
 .header-container {
@@ -301,8 +299,8 @@ h6 {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left bottom, left top, from(#72bfc1), to(#fff2ec));
-  background: linear-gradient(to top, #72bfc1, #fff2ec);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ba9b20), to(#fff2ec));
+  background: linear-gradient(to top, #ba9b20, #fff2ec);
   padding: 40px 0;
 }
 
@@ -324,10 +322,11 @@ h6 {
 }
 
 .footer__logo {
+  display: inline-block;
   font-family: "MuseoModerno", sans-serif;
   font-size: 24px;
   font-weight: 600;
-  color: #204e10;
+  color: #c67b02;
 }
 
 .footer__box {

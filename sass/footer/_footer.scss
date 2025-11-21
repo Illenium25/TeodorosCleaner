@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(to top, #72bfc1, #fff2ec);
+    background: linear-gradient(to top, #ba9b20, #fff2ec);
     padding: 40px 0;
 }
 
@@ -14,6 +14,7 @@
 }
 
 .footer__logo{
+    display: inline-block;
     font-family: $logo-style;
     font-size: 24px;
     font-weight: 600;
