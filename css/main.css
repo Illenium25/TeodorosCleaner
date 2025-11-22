@@ -87,7 +87,7 @@ h6 {
 }
 
 .body {
-  background: #fff2ec;
+  background: #ffe9de;
   max-width: 100%;
 }
 
@@ -119,7 +119,7 @@ h6 {
   margin-bottom: 20px;
   text-align: center;
   font-weight: 400;
-  color: #5a4035;
+  color: #2a1912;
 }
 
 .section {
@@ -132,13 +132,13 @@ h6 {
   padding: 10px 20px;
   margin-left: auto;
   margin-right: auto;
-  background: #ffbc9a;
+  background: #d58a64;
   border-radius: 5px;
 }
 
 .hero-button-link {
   color: #5a4035;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .logo {
@@ -244,7 +244,7 @@ h6 {
 
 .hero-title {
   font-style: "Oswald", sans-serif;
-  color: #5a4035;
+  color: #2a1912;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -299,8 +299,8 @@ h6 {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ba9b20), to(#fff2ec));
-  background: linear-gradient(to top, #ba9b20, #fff2ec);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ba9b20), to(#ffe9de));
+  background: linear-gradient(to top, #ba9b20, #ffe9de);
   padding: 40px 0;
 }
 
@@ -336,14 +336,14 @@ h6 {
 .footer__contacts {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  color: #393838;
+  color: #5a4035;
 }
 
 .footer__area {
   margin-top: 20px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  color: #393838;
+  color: #5a4035;
 }
 
 .footer__ending {
@@ -351,7 +351,7 @@ h6 {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   text-align: center;
-  color: #393838;
+  color: #5a4035;
 }
 
 .gallery {
@@ -398,5 +398,5 @@ h6 {
 
 .steps__item {
   font-size: 17px;
-  color: #393838;
+  color: #5a4035;
 }/*# sourceMappingURL=main.css.map */
