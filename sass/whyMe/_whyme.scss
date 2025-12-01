@@ -1,3 +1,7 @@
+.why-me__list {
+    margin-bottom: 20px;
+}
+
 .why-me__list .why-me__item + .why-me__item {
     margin-top: 15px;
 }
@@ -5,11 +9,4 @@
 .why-me__info{
     font-size: 16px;
     padding: 0 10px;
-}
-
-.why-me__seo {
-    margin-top: 20px;
-    font-size: 14px;
-    color: $h-color;
-    text-align: center;
 }
