@@ -21,6 +21,7 @@
 .title{
   font-family: $h-style;
   font-size: 32px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   
@@ -30,20 +31,24 @@
 
 
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    background: #fec0a1;
-    border-radius: 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:20px auto;
+  padding:10px 24px;
+  width: 160px;
+  height: 40px;
+  background:#ffbc9a;
+  border-radius:8px;
+  color:#5a4035;
+  font-size:16px;
+  font-weight:600;
+  text-decoration:none;
 }
 
-.button-link{
-    color: $button-text;
-    font-size: 18px;
-    padding: 10px 20px;
+.seo {
+    margin-top: 20px;
+    font-size: 14px;
+    color: $h-color;
+    text-align: center;
 }
