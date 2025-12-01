@@ -5,11 +5,12 @@
     if (heroInfo) {
       const phrases = [
         '>> Home cleaning in Seattle, WA <<',
-        '>> Move-out cleaning for apartments & houses <<',
+        '>> Move-out cleaning <<',
         '>> Deep cleaning for busy people <<',
         '>> Office & commercial cleaning <<',
-        '>> Regular weekly or bi-weekly cleaning <<'
-      ];
+        '>> Regular weekly <<',
+        '>> Bi-weekly cleaning <<'
+        ];
 
       let index = 0;
 
