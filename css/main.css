@@ -128,7 +128,7 @@ h6 {
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 15px;
   margin-bottom: 40px;
   text-align: center;
@@ -151,12 +151,13 @@ h6 {
   padding: 10px 24px;
   width: 160px;
   height: 40px;
-  background: #ffbc9a;
-  border-radius: 8px;
-  color: #5a4035;
-  font-size: 16px;
+  background: #EFA47C;
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px 28px;
   font-weight: 600;
-  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .seo {
@@ -229,6 +230,20 @@ h6 {
   z-index: 3;
 }
 
+.reveal {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +257,7 @@ h6 {
   font-weight: 600;
   letter-spacing: -0.5px;
   font-size: 22px;
+  border-bottom: 2px #e3a48a groove;
 }
 
 .logo__icon {
@@ -341,7 +357,8 @@ h6 {
 .hero-title {
   font-style: "Oswald", sans-serif;
   color: #2a1912;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
