@@ -1,6 +1,7 @@
 .body {
     background: $body-background;
     max-width: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -18,14 +19,25 @@
   }
 }
 
+.section {
+  padding: 40px 0;
+}
+
 .title{
   font-family: $h-style;
   font-size: 32px;
-  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   
   font-weight: 400;
+  color: $h-color;
+}
+
+.subtitle{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  text-align: center;
   color: $h-color;
 }
 
@@ -34,7 +46,11 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  margin:20px auto;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  
   padding:10px 24px;
   width: 160px;
   height: 40px;
@@ -51,4 +67,60 @@
     font-size: 14px;
     color: $h-color;
     text-align: center;
+}
+
+/* ===== LIGHTBOX ===== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* важно */
+}
+
+.lightbox--open {
+  display: flex;
+}
+
+.lightbox__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  z-index: 2; /* над overlay */
+}
+
+.lightbox__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 3;
 }

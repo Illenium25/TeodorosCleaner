@@ -1,6 +1,6 @@
 .hero {
     max-width: 100%;
-    margin-bottom: 15px;
+    padding-top: 0;
 }
 
 .hero-picture {
@@ -38,3 +38,12 @@
 }
 
 
+/* Плавная смена текста в hero */
+.hero__info {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero__info--hidden {
+  opacity: 0;
+}

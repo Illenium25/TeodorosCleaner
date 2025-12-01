@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -89,6 +90,7 @@ h6 {
 .body {
   background: #fff2ec;
   max-width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -112,13 +114,24 @@ h6 {
   }
 }
 
+.section {
+  padding: 40px 0;
+}
+
 .title {
   font-family: "Oswald", sans-serif;
   font-size: 32px;
-  margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 400;
+  color: #2a1912;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  text-align: center;
   color: #2a1912;
 }
 
@@ -132,7 +145,9 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
   padding: 10px 24px;
   width: 160px;
   height: 40px;
@@ -151,6 +166,69 @@ h6 {
   text-align: center;
 }
 
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 9999; /* важно */
+}
+
+.lightbox--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lightbox__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+  -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  z-index: 2; /* над overlay */
+}
+
+.lightbox__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 3;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,6 +240,7 @@ h6 {
   font-family: "MuseoModerno", sans-serif;
   color: #e3a48a;
   font-weight: 600;
+  letter-spacing: -0.5px;
   font-size: 22px;
 }
 
@@ -230,7 +309,7 @@ h6 {
 
 .hero {
   max-width: 100%;
-  margin-bottom: 15px;
+  padding-top: 0;
 }
 
 .hero-picture {
@@ -270,14 +349,15 @@ h6 {
   font-size: 18px;
 }
 
-.pricing__list .pricing__item + .pricing__item {
-  margin-top: 8px;
+/* Плавная смена текста в hero */
+.hero__info {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.pricing__item {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  color: #393838;
+.hero__info--hidden {
+  opacity: 0;
 }
 
 .cleaning__item {
@@ -388,32 +468,38 @@ h6 {
   color: #5a4035;
 }
 
-.gallery {
-  padding: 40px 20px;
-  text-align: center;
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.gallery-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 10px;
+/* ВАЖНО: фиксируем форму и высоту */
+.gallery__item {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  aspect-ratio: 4/3; /* делает миниатюру */
+  max-height: 220px; /* доп. ограничение высоты */
 }
 
-.gallery-container img {
-  width: 280px;
-  height: 180px;
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
   -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-  scroll-snap-align: start;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+     object-fit: cover; /* обрезает, чтобы картинка красиво вписалась */
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 .faq-list .faq__item + .faq__item {
