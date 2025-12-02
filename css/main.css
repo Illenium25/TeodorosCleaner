@@ -498,6 +498,76 @@ h6 {
     height: 750px;
   }
 }
+/* Fade + slide animation when section appears */
+.estimate {
+  -webkit-animation: fadeUp 0.8s ease forwards;
+          animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+@-webkit-keyframes fadeUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/* Success message */
+.form-success {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #d7f7e4;
+  color: #1c7c47;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-animation: fadeIn 0.6s ease;
+          animation: fadeIn 0.6s ease;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/* Button loading state */
+.form__btn.loading {
+  background: #c58f6b;
+  cursor: wait;
+  opacity: 0.7;
+}
+
 .faq-list .faq__item + .faq__item {
   margin-top: 15px;
 }

@@ -1,36 +1,85 @@
-.estimate {
-  background: $body-background; /* мягкий светлый персик */
-  padding: 60px 0;
-  border-radius: 10px;
-}
-
-.estimate__subtitle {
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: 25px;
-  color: #5a4035;
-}
-
+/* FORM CONTAINER STYLE */
 .estimate__box {
-  max-width: 100%;
-  padding: 10px;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-.estimate__iframe {
+/* FORM ELEMENTS */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form__group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #3a2d28;
+}
+
+.form__group input,
+.form__group select,
+.form__group textarea {
   width: 100%;
+  padding: 14px 16px;
   border-radius: 14px;
-  background: transparent;
+  background: #fff9f6;
+  border: 2px solid #e9c8b8;
+  font-size: 15px;
+  transition: all 0.25s ease;
 }
 
-@media (max-width: 768px) {
-  .estimate {
-    padding: 40px 0;
-  }
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+  color: #bbaaa4;
+}
 
-  .estimate__iframe {
-    height: 750px;
-  }
+/* FOCUS STATE */
+.form__group input:focus,
+.form__group select:focus,
+.form__group textarea:focus {
+  border-color: #e89b75;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(233,155,117,0.25);
+  outline: none;
+}
+
+/* BUTTON */
+.form__btn {
+  background: #e89b75;
+  padding: 16px;
+  font-size: 17px;
+  border-radius: 14px;
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.form__btn:hover {
+  background: #d8855f;
+}
+
+/* LOADING STATE */
+.form__btn.loading {
+  background: #c17857;
+  opacity: 0.8;
+}
+
+/* SUCCESS MESSAGE */
+.form-success {
+  display: none;
+  margin-top: 20px;
+  background: #d8fbe4;
+  padding: 15px;
+  border-radius: 14px;
+  color: #1e7b49;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
 }

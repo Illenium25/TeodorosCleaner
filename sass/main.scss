@@ -1,14 +1,14 @@
-@import './reset';
-@import './styles';
-@import './general';
-@import './header/header';
-@import './hero/hero';
-@import './cleaning/cleaning';
-@import './whyMe/whyme';
+@use './reset';
+@use './styles';
+@use './general';
+@use './header/header';
+@use './hero/hero';
+@use './cleaning/cleaning';
+@use './whyMe/whyme';
 
-@import './gallery/gallery';
-@import './form/form';
-@import './FAQ/questions';
+@use './gallery/gallery';
+@use './form/form';
+@use './FAQ/questions';
 
-@import './steps/steps';
-@import './footer/footer';
+@use './steps/steps';
+@use './footer/footer';

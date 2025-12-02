@@ -153,7 +153,65 @@
                 </ul>
             </div>
         </section>
-        
+        <!-- form -->
+        <section class="section estimate reveal" id="estimate">
+            <div class="container">
+                <h2 class="title">Get an Estimate</h2>
+                <p class="estimate__subtitle">Fill out the form below and I will get back to you shortly.</p>
+
+                <div class="estimate__box">
+
+                    <form id="cleanerForm" class="form">
+                        <!-- Hidden fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form__group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>City</label>
+                            <input type="text" name="city" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Type of Cleaning</label>
+                            <select name="service" required>
+                                <option value="General Cleaning">General Cleaning</option>
+                                <option value="Deep Cleaning">Deep Cleaning</option>
+                                <option value="Move-In Cleaning">Move-In Cleaning</option>
+                                <option value="Move-Out Cleaning">Move-Out Cleaning</option>
+                                <option value="Airbnb Cleaning">Airbnb Cleaning</option>
+                                <option value="Office Cleaning">Office Cleaning</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Preferred Date</label>
+                            <input type="date" name="date" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Additional Details</label>
+                            <textarea name="message" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn form__btn">Send Request</button>
+                    </form>
+
+                <!-- SUCCESS MESSAGE -->
+                <div id="formSuccess" class="form-success">Your request has been sent!</div>
+
+                </div>
+            </div>
+        </section>        
          <!-- gallery -->
         <section class="gallery section" id="gallery">
             <div class="container gallery__inner">
@@ -232,6 +290,7 @@
     <script src="./js/hero.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/form.js"></script>
     <script type="application/ld+json">
         {
         "@context": "https://schema.org",
