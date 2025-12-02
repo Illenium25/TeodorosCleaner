@@ -13,7 +13,7 @@ document.getElementById("cleanerForm").addEventListener("submit", async function
   const formData = new FormData(form);
 
   // отправляем AJAX-запрос
-  const response = await fetch("https://formsubmit.co/teodoroscleaner@gmail.com", {
+  const response = await fetch("https://formsubmit.co/teodoroscleanerservices@gmail.com", {
     method: "POST",
     body: formData
   });
