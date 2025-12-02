@@ -462,110 +462,77 @@ h6 {
   transition: transform 0.3s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
 }
 
-.estimate {
-  background: #fff2ec; /* мягкий светлый персик */
-  padding: 60px 0;
-  border-radius: 10px;
+/* FORM STYLES */
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  padding: 10px;
 }
 
-.estimate__subtitle {
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: 25px;
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
   color: #5a4035;
 }
 
-.estimate__box {
-  max-width: 100%;
-  padding: 10px;
-  background: #fff;
-  border-radius: 14px;
-  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.estimate__iframe {
-  width: 100%;
-  border-radius: 14px;
-  background: transparent;
-}
-
-@media (max-width: 768px) {
-  .estimate {
-    padding: 40px 0;
-  }
-  .estimate__iframe {
-    height: 750px;
-  }
-}
-/* Fade + slide animation when section appears */
-.estimate {
-  -webkit-animation: fadeUp 0.8s ease forwards;
-          animation: fadeUp 0.8s ease forwards;
-  opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-@-webkit-keyframes fadeUp {
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-/* Success message */
-.form-success {
-  display: none;
-  margin-top: 20px;
-  padding: 15px;
-  background: #d7f7e4;
-  color: #1c7c47;
-  border-radius: 10px;
+.form__group label {
   font-weight: 600;
-  text-align: center;
-  -webkit-animation: fadeIn 0.6s ease;
-          animation: fadeIn 0.6s ease;
+  font-size: 15px;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+.form__group input,
+.form__group select,
+.form__group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e3a48a;
+  background: #fff8f4;
+  font-size: 15px;
+  color: #2a1912;
+  font-family: "Poppins", sans-serif;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+.form__group input:focus,
+.form__group select:focus,
+.form__group textarea:focus {
+  border-color: #c58f6b;
+  -webkit-box-shadow: 0 0 0 3px rgba(227, 164, 138, 0.3);
+          box-shadow: 0 0 0 3px rgba(227, 164, 138, 0.3);
 }
-/* Button loading state */
-.form__btn.loading {
+
+.form__btn {
+  background: #e3a48a;
+  color: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.form__btn:hover {
   background: #c58f6b;
-  cursor: wait;
-  opacity: 0.7;
+}
+
+.form-success {
+  margin-top: 10px;
 }
 
 .faq-list .faq__item + .faq__item {
