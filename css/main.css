@@ -428,6 +428,95 @@ h6 {
   padding: 0 10px;
 }
 
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* ВАЖНО: фиксируем форму и высоту */
+.gallery__item {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  aspect-ratio: 4/3; /* делает миниатюру */
+  max-height: 220px; /* доп. ограничение высоты */
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; /* обрезает, чтобы картинка красиво вписалась */
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.estimate {
+  background: #fff2ec; /* мягкий светлый персик */
+  padding: 60px 0;
+  border-radius: 10px;
+}
+
+.estimate__subtitle {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #5a4035;
+}
+
+.estimate__box {
+  max-width: 100%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.estimate__iframe {
+  width: 100%;
+  border-radius: 14px;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .estimate {
+    padding: 40px 0;
+  }
+  .estimate__iframe {
+    height: 750px;
+  }
+}
+.faq-list .faq__item + .faq__item {
+  margin-top: 15px;
+}
+
+.faq__item {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.steps .steps__item + .steps__item {
+  margin-top: 10px;
+}
+
+.steps__item {
+  font-size: 17px;
+  color: #5a4035;
+}
+
 .footer {
   background: -webkit-gradient(linear, left bottom, left top, from(#e3a48a), to(#fff2ec));
   background: linear-gradient(to top, #e3a48a, #fff2ec);
@@ -481,58 +570,5 @@ h6 {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   text-align: center;
-  color: #5a4035;
-}
-
-.gallery__grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-
-/* ВАЖНО: фиксируем форму и высоту */
-.gallery__item {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 14px;
-  overflow: hidden;
-  position: relative;
-  outline: none;
-  aspect-ratio: 4/3; /* делает миниатюру */
-  max-height: 220px; /* доп. ограничение высоты */
-}
-
-.gallery__item img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover; /* обрезает, чтобы картинка красиво вписалась */
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
-  transition: -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  transition: transform 0.3s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
-}
-
-.faq-list .faq__item + .faq__item {
-  margin-top: 15px;
-}
-
-.faq__item {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  color: #000;
-}
-
-.steps .steps__item + .steps__item {
-  margin-top: 10px;
-}
-
-.steps__item {
-  font-size: 17px;
   color: #5a4035;
 }/*# sourceMappingURL=main.css.map */

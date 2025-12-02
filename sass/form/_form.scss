@@ -1,0 +1,36 @@
+.estimate {
+  background: $body-background; /* мягкий светлый персик */
+  padding: 60px 0;
+  border-radius: 10px;
+}
+
+.estimate__subtitle {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #5a4035;
+}
+
+.estimate__box {
+  max-width: 100%;
+  padding: 10px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.estimate__iframe {
+  width: 100%;
+  border-radius: 14px;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .estimate {
+    padding: 40px 0;
+  }
+
+  .estimate__iframe {
+    height: 750px;
+  }
+}
