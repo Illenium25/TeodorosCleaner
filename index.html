@@ -35,29 +35,39 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="container header-container">
-            <a class="logo" href="./index.html">
-                <img class="logo__icon" src="./images/logo/logo-pick.png" alt="logo">
-                Teodoro’s Cleaner
-            </a>
-            <div class="contacts">
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="https://www.instagram.com/teodoroscleaner?igsh=aGoydHVmdjVhbjZk">
-                            <svg class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" href="https://wa.me/14255605847">
-                            <svg class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="header-container">
+                <a class="logo" href="./index.html">
+                    <img class="logo__icon" src="./images/logo/logo-pick.png" alt="logo">
+                    Teodoro’s Cleaner
+                </a>
+                <div class="contacts">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="https://www.instagram.com/teodoroscleaner?igsh=aGoydHVmdjVhbjZk">
+                                <svg class="contacts__icon">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="https://wa.me/14255605847">
+                                <svg class="contacts__icon">
+                                    <use href="./images/symbol-defs.svg#icon-whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="navigation">
+                <nav class="nav">
+                    <a href="#estimate" class="nav__link">Get Estimate</a>
+                    <a href="#cleaning" class="nav__link">Services</a>
+                    <a href="#gallery" class="nav__link">Gallery</a>
+                </nav>
+            </div>
+            
         </div>
     </header>
     <main>
@@ -157,7 +167,7 @@
         <section class="section estimate reveal" id="estimate">
             <div class="container">
                 <h2 class="title">Get an Estimate</h2>
-                <p class="estimate__subtitle">Fill out the form below and I will get back to you shortly.</p>
+                <p class="subtitle">Fill out the form below and I will get back to you shortly.</p>
 
                 <div class="estimate__box">
 
@@ -165,6 +175,7 @@
                         <!-- Hidden fields -->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_replyto" value="teodoroscleanerservices@gmail.com">
 
                         <div class="form__group">
                             <label>Full Name</label>
@@ -205,10 +216,6 @@
 
                         <button type="submit" class="btn form__btn">Send Request</button>
                     </form>
-
-                <!-- SUCCESS MESSAGE -->
-                <div id="formSuccess" class="form-success">Your request has been sent!</div>
-
                 </div>
             </div>
         </section>        

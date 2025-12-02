@@ -245,6 +245,10 @@ h6 {
           transform: translateY(0);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,6 +289,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .contacts__list {
@@ -322,6 +327,35 @@ h6 {
   fill: #e3a48a;
   width: 24px;
   height: 24px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  color: #100d0c;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #f4c4a3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  background-color: #e39b75;
 }
 
 .hero {
