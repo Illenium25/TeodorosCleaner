@@ -153,7 +153,7 @@ h6 {
   padding: 10px 24px;
   width: 160px;
   height: 40px;
-  background: #EFA47C;
+  background: #efa47c;
   color: #fff;
   border-radius: 10px;
   padding: 14px 28px;
@@ -166,6 +166,10 @@ h6 {
   font-size: 12px;
   color: #2a1912;
   text-align: center;
+}
+
+.seo-bottom {
+  margin-bottom: 20px;
 }
 
 /* ===== LIGHTBOX ===== */
@@ -249,6 +253,35 @@ html {
   scroll-behavior: smooth;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  color: #100d0c;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #efa47c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  background-color: #efa47c;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,35 +360,6 @@ html {
   fill: #e3a48a;
   width: 24px;
   height: 24px;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-
-.nav__link {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  color: #100d0c;
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  background-color: #f4c4a3;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.nav__link:hover {
-  background-color: #e39b75;
 }
 
 .hero {

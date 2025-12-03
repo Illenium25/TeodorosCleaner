@@ -56,7 +56,7 @@
   padding:10px 24px;
   width: 160px;
   height: 40px;
-  background: #EFA47C;
+  background: $button-background;
   color: #fff;
   border-radius: 10px;
   padding: 14px 28px;
@@ -68,6 +68,10 @@
     font-size: 12px;
     color: $h-color;
     text-align: center;
+}
+
+.seo-bottom {
+    margin-bottom: 20px;
 }
 
 /* ===== LIGHTBOX ===== */
@@ -141,4 +145,29 @@
 // scroll nav
 html {
     scroll-behavior: smooth;
+}
+
+// nav styles
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 20px;
+}
+
+.nav__link {
+    font-family: $h-style;
+    font-size: 14px;
+    color: $button-text;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background-color: $button-background;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    background-color: $button-background;
 }
