@@ -62,7 +62,7 @@
             </div>
             <div class="navigation">
                 <nav class="nav">
-                    <a href="#form" class="nav__link" data-open-estimate>Form</a>
+                    <a href="#estimate" class="nav__link">Form</a>
                     <a href="#cleaning" class="nav__link">Services</a>
                     <a href="#gallery" class="nav__link">Gallery</a>
                 </nav>
@@ -180,7 +180,63 @@
                     <li class="faq__item reveal"><strong>Do you bring your own supplies?</strong> - Yes, all cleaning products and equipment are provided.</li>
                 </ul>
             </div>
-        </section>  
+        </section>
+        <!-- form -->
+        <section class="section estimate reveal" id="estimate">
+            <div class="container">
+                <h2 class="title">Form <br> (I will Receive an Email)</h2>
+                <p class="subtitle">Fill out the form below and I will get back to you shortly.</p>
+
+                <div class="estimate__box">
+
+                    <form id="cleanerForm" class="form">
+                        <!-- Hidden fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_replyto" value="teodoroscleanerservices@gmail.com">
+
+                        <div class="form__group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>City</label>
+                            <input type="text" name="city" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Type of Cleaning</label>
+                            <select name="service" required>
+                                <option value="General Cleaning">General Cleaning</option>
+                                <option value="Deep Cleaning">Deep Cleaning</option>
+                                <option value="Move-In Cleaning">Move-In Cleaning</option>
+                                <option value="Move-Out Cleaning">Move-Out Cleaning</option>
+                                <option value="Airbnb Cleaning">Airbnb Cleaning</option>
+                                <option value="Office Cleaning">Office Cleaning</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Preferred Date</label>
+                            <input type="date" name="date" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label>Additional Details</label>
+                            <textarea name="message" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn form__btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>        
          <!-- gallery -->
         <section class="gallery section" id="gallery">
             <div class="container gallery__inner">
@@ -214,7 +270,7 @@
             <div class="container">
                 <h2 class="title reveal">How It Works</h2>
                 <ul class="steps reveal">
-                    <li class="steps__item">1. Contact me via WhatsApp, phone or fill out the form so that I receive an email</li>
+                    <li class="steps__item">1. Contact me via WhatsApp, phone or fill out the form</li>
                     <li class="steps__item">2. Tell me your location & type of cleaning</li>
                     <li class="steps__item">3. I come on time and do the cleaning</li>
                     <li class="steps__item">4. You pay after work — simple</li>
@@ -226,13 +282,6 @@
         <div class="section seo-section reveal">
             <div class="container">
                 <p class="seo seo-bottom">Teodoro’s Cleaner provides professional home, apartment, and move-out cleaning in Seattle, Bellevue, Redmond, Kirkland, Bothell, and Lynnwood. Deep cleaning, regular cleaning, and full move-out services at fair prices.</p>
-            </div>
-            <div class="navigation">
-                <nav class="nav">
-                    <a href="#form" class="nav__link" data-open-estimate>Form</a>
-                    <a href="#cleaning" class="nav__link">Services</a>
-                    <a href="#gallery" class="nav__link">Gallery</a>
-                </nav>
             </div>
         </div>
         <section class="section areas">
@@ -295,65 +344,5 @@
         }
     </script>
     <a href="https://wa.me/14255605847" class="whatsapp-float" target="_blank"></a>
-    <div class="modal" id="estimateModal">
-        <div class="modal__overlay"></div>
-
-        <div class="modal__content">
-            <button class="modal__close">&times;</button>
-
-            <!-- ТВОЯ ФОРМА -->
-            <h2 class="title">Get an Estimate</h2>
-            <p class="estimate__subtitle">Fill out the form below and I will get back to you shortly.</p>
-
-            <div class="estimate__box">
-                <form id="form" class="form">
-                    <!-- Hidden fields -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_replyto" value="teodoroscleanerservices@gmail.com">
-
-                    <div class="form__group">
-                        <label>Full Name</label>
-                        <input type="text" name="name" required>
-                    </div>
-
-                    <div class="form__group">
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" required>
-                    </div>
-
-                    <div class="form__group">
-                        <label>City</label>
-                        <input type="text" name="city" required>
-                    </div>
-
-                    <div class="form__group">
-                        <label>Type of Cleaning</label>
-                        <select name="service" required>
-                            <option value="General Cleaning">General Cleaning</option>
-                            <option value="Deep Cleaning">Deep Cleaning</option>
-                            <option value="Move-In Cleaning">Move-In Cleaning</option>
-                            <option value="Move-Out Cleaning">Move-Out Cleaning</option>
-                            <option value="Airbnb Cleaning">Airbnb Cleaning</option>
-                            <option value="Office Cleaning">Office Cleaning</option>
-                        </select>
-                    </div>
-
-                    <div class="form__group">
-                        <label>Preferred Date</label>
-                        <input type="date" name="date" required>
-                    </div>
-
-                    <div class="form__group">
-                        <label>Additional Details</label>
-                        <textarea name="message" rows="4"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn form__btn">Send Request</button>
-                </form>
-            </div>
-
-        </div>
-    </div>
 </body>
 </html>
