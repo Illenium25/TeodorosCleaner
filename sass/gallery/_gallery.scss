@@ -1,6 +1,7 @@
 .gallery__grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
@@ -26,4 +27,14 @@
   object-fit: cover;        /* обрезает, чтобы картинка красиво вписалась */
   transform: scale(1.02);
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+// adaptive
+
+@media (min-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px; /* чтобы не растягивалось */
+    margin: 0 auto;   /* центр */
+  }
 }

@@ -554,7 +554,10 @@ html {
 }
 .gallery__grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
@@ -586,6 +589,13 @@ html {
   transition: transform 0.3s ease, filter 0.3s ease, -webkit-transform 0.3s ease, -webkit-filter 0.3s ease;
 }
 
+@media (min-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px; /* чтобы не растягивалось */
+    margin: 0 auto; /* центр */
+  }
+}
 /* FORM STYLES */
 .form {
   display: -webkit-box;
