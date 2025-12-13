@@ -45,3 +45,24 @@
     text-align: center;
     color: $text-color;
 }
+
+// adaptive
+
+@media (min-width: $tablet) {
+  .footer__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 40px;
+  }
+}
+
+
+@media (min-width: $tablet) {
+    .footer__logo {
+        display: block;
+        font-size: 32px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

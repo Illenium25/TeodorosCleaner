@@ -49,3 +49,20 @@
 .hero__info--hidden {
   opacity: 0;
 }
+
+// adaptive
+
+@media (min-width: 768px) {
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero__info {
+    font-size: 18px;
+  }
+}

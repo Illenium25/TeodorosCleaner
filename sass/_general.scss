@@ -200,3 +200,15 @@ html {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
+
+// adaptive some sections
+
+@media (min-width: $tablet) {
+  .faq-list,
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

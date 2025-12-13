@@ -10,3 +10,13 @@
     font-size: 16px;
     padding: 0 10px;
 }
+
+// adaptive
+
+@media (min-width: $tablet) {
+  .why-me__list {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+  }
+}

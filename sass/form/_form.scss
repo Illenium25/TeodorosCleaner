@@ -60,3 +60,12 @@
 .form-success {
     margin-top: 10px;
 }
+
+// adaptive
+
+@media (min-width: $tablet) {
+  .estimate__box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
