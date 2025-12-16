@@ -5,7 +5,7 @@
   gap: 16px;
 }
 
-/* ВАЖНО: фиксируем форму и высоту */
+/* фиксируем форму и высоту */
 .gallery__item {
   border: none;
   padding: 0;
@@ -31,7 +31,7 @@
 
 // adaptive
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .gallery__grid {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1000px; /* чтобы не растягивалось */
