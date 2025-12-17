@@ -1,0 +1,102 @@
+.gallery-category {
+  padding: 24px 16px;
+  background: #ffeaea;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+.gallery-title {
+    margin-bottom: 20px;
+}
+
+.gallery-page__info {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.gallery-page__smallinfo {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.gallery-category__title {
+  font-family: $h-style;
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.category-info {
+  font-size: 14px;
+  color: #5a4035;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-row::-webkit-scrollbar-thumb {
+  background: #5a4035;
+  border-radius: 4px;
+}
+
+.gallery-row .gallery__item {
+  flex: 0 0 260px;   /* ширина карточки */
+  aspect-ratio: 4 / 3;
+  scroll-snap-align: start;
+}
+
+// немного украшений
+
+.gallery-category__title {
+  font-family: $h-style;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #2a1912;
+}
+
+// украшение картинок
+
+.gallery__item {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 9px rgba(0,0,0,0.8);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+// adaptive
+
+@media (min-width: $tablet) {
+  .gallery-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+  }
+
+  .gallery-row .gallery__item {
+    flex: unset;
+  }
+}
