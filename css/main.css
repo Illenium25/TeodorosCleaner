@@ -564,11 +564,10 @@ html {
 
 /* фиксируем форму и высоту */
 .gallery__item {
-  border: none;
   padding: 0;
   background: transparent;
   cursor: pointer;
-  border-radius: 14px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
   outline: none;
