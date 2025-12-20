@@ -1,9 +1,19 @@
+.gallery-categories {
+  margin-top: 15px;
+}
+
+.gallery-category + .gallery-category {
+  margin-top: 56px;
+}
+
+
 .gallery-category {
   padding: 24px 16px;
   background: #ffeaea;
   border-radius: 20px;
   margin-bottom: 32px;
 }
+
 
 .gallery-title {
     margin-bottom: 20px;

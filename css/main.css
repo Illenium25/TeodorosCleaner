@@ -562,7 +562,6 @@ html {
   gap: 16px;
 }
 
-/* фиксируем форму и высоту */
 .gallery__item {
   padding: 0;
   background: transparent;
@@ -780,6 +779,14 @@ html {
     text-align: center;
   }
 }
+.gallery-categories {
+  margin-top: 15px;
+}
+
+.gallery-category + .gallery-category {
+  margin-top: 56px;
+}
+
 .gallery-category {
   padding: 24px 16px;
   background: #ffeaea;
