@@ -789,7 +789,8 @@ html {
 
 .gallery-category {
   padding: 24px 16px;
-  background: #ffeaea;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff4ee), to(#ffeae1));
+  background: linear-gradient(180deg, #fff4ee 0%, #ffeae1 100%);
   border-radius: 20px;
   margin-bottom: 32px;
 }
@@ -867,8 +868,8 @@ html {
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
-  -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 6px 9px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
   -webkit-transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
   transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
